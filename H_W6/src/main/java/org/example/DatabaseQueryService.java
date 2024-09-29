@@ -51,7 +51,7 @@ public class DatabaseQueryService {
 
             try (Connection connection = Database.getConnection();
                  PreparedStatement preparedStatement = connection.prepareStatement(sql);
-                 ResultSet resultSet = preparedStatement.executeQuery()) {  // Removed SQL from executeQuery()
+                 ResultSet resultSet = preparedStatement.executeQuery()) {
 
                 while (resultSet.next()) {
                     String projectName = resultSet.getString("PROJECT_NAME");
@@ -77,7 +77,7 @@ public class DatabaseQueryService {
 
             try (Connection connection = Database.getConnection();
                  PreparedStatement preparedStatement = connection.prepareStatement(sql);
-                 ResultSet resultSet = preparedStatement.executeQuery()) {  // Removed SQL from executeQuery()
+                 ResultSet resultSet = preparedStatement.executeQuery()) {
 
                 while (resultSet.next()) {
                     String name = resultSet.getString("NAME");
@@ -103,7 +103,7 @@ public class DatabaseQueryService {
 
             try (Connection connection = Database.getConnection();
                  PreparedStatement preparedStatement = connection.prepareStatement(sql);
-                 ResultSet resultSet = preparedStatement.executeQuery()) {  // Removed SQL from executeQuery()
+                 ResultSet resultSet = preparedStatement.executeQuery()) {
 
                 while (resultSet.next()) {
                     String type = resultSet.getString("TYPE");
